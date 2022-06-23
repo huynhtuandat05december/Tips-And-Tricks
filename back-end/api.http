@@ -2,7 +2,7 @@ GET http://localhost:3001
 ###
 GET http://localhost:3001/abc
 ###
-POST http://localhost:3001/user/register
+POST http://localhost:3001/api/v1/user/register
 Content-Type: application/json
 
 {
@@ -10,7 +10,7 @@ Content-Type: application/json
     "password":"123456"
 }
 ###
-POST http://localhost:3001/user/login
+POST http://localhost:3001/api/v1/user/login
 Content-Type: application/json
 
 {
@@ -18,10 +18,10 @@ Content-Type: application/json
     "password":"123456"
 }
 ###
-GET http://localhost:3001/user/test-token
+GET http://localhost:3001/api/v1/user/test-token
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjliOWQ5ZTFmYzk1NGZmODMyZDliYzkiLCJpYXQiOjE2NTQzNjcwNTgsImV4cCI6MTY1NDM3MDY1OH0.01XVwBNJN2hje-vfa7d5mzDakWECjny321ZKV9YSVCI
 ###
-POST http://localhost:3001/user/refresh-token
+POST http://localhost:3001/api/v1/user/refresh-token
 Content-Type: application/json
 
 {
